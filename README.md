@@ -1,26 +1,21 @@
-Initial documents.
+A more formalized set of rules for TODO.txt.
 
 ## Goals
 
-- Document a TODO.txt convention; with layers/levels and more tersely cq dry than github.com/todotxt/todo.txt
-- Provide an optimal form for agentic coding/LLM instructions, and document.
+- [x] Document a TODO.txt convention; with layers/levels and in more formal rules than github.com/todotxt/todo.txt
+- [x] Provide an optimal form document for agentic or project derived instructions.
+- [ ] Evolve the format into a separate, closely related syntax for tracking of
+  other, non-task entities or records in plain-text, user editable files.
+- [ ] Provide some guidance and centralized conventions for further tooling.
 
-## Initial draft
+## Definition
 
-The pattern for TODO.txt compliant file lines is::
+- [TODO.txt format rules and specifications](doc/FORMAT.md) — levels 0–4, five layers of compliance.
 
-  [<close-tag>] <priority-tag> [<close-date>] <creation-date> ... <tags>
+- [TODO.txt usage conventions](doc/CONVENTIONS+tasks.md) - the card to paste into agent or project instructions.
 
-Relatively simple apps can turn the list into an interactive, filtered list
-and card based records.
+- [Generic project/baseline conventions](doc/CONVENTIONS+baseline.md) (copy).
 
-The original specification states the format in terms of a set of rules,
-and does not attempt to further formalize a structure or compliance layers.
+## Status
 
-It specifies only time, topic and project dimensions. And constrained by a
-task-centric flow.
-
-The format is conducive of a more generalized card-based, plain-text storage
-system. With limited tag, or decorated / specially delineated terms mapping
-free-form text records to ids or other attributes, with possible associated
-groups or home locations for canonical copies.
+The plan and dev/design notes are TODO.txt entries; no more/other dedicated dev docs exist for this project.

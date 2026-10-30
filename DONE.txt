@@ -1,0 +1,20 @@
+(C) 2026-10-30 DONE: initial format draft, goal outline and place for notes version:0.0.1 \
+
+  ## Initial draft
+
+  The pattern for TODO.txt compliant file lines is::
+
+    [<close-tag>] <priority-tag> [<close-date>] <creation-date> ... <tags>
+
+  Relatively simple apps can turn the list into an interactive, filtered list
+  and card based records.
+
+  The original specification states the format in terms of a set of rules,
+  and does not attempt to further formalize a structure or compliance layers.
+
+  It specifies only time, topic and project dimensions. And constrained by a
+  task-centric flow.
+
+  The format is conducive of a more generalized card-based, plain-text storage
+  system. With limited tag, ie. decorated / specially delineated terms, to
+  use for indexing and filtering.

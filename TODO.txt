@@ -1,0 +1,51 @@
+(C) 2026-10-30 TODO: Get some version slapped on the current state in a semi-ceremonial fashion
+
+(D) 2026-10-30 IDEA: Appendix I: Priorities usage \
+
+  ### Priorities
+
+  The established priority axis description and usage guides are a bit thin, and broad.
+  Normal, generic apps should easily go by on just 6 or 7 levels--not 26.
+
+  Users may map those level to their preferred use.
+
+  And for extended A-Z organisations other conventions can be established ad-hoc;
+  organisations may provide controlled rankings;
+  conventions can define pseudo-priorities, channels or facilities;
+  and mapped to the above or to a more complex syntax.
+
+  Cf. how Linux/BSD (log) event facility and priority are merged into a field PRI
+  to channel messages.
+
+(D) 2026-10-30 IDEA: High level jargon and structure / syntax
+
+  An entry is spread over a header and possible follow up lines.
+
+  The logical field sets of an record are a status or 'stat' set of
+  fields, followed by a required "oneline" text or description that may be
+  followed up more optional lines of free form text.
+
+  Such oneline can be substructured, in the same way the category of TODO-entries
+  defined here are; and such follow up text as well can be divided into sections
+  or divisions of kinds. These are emergent properties, and the scope lifts
+  / changes the focus for the rules but there is a clear, alternate and simple
+  format structure.
+
+  For simple parsing, the strict '(' `A-Z` ')' and 'x' prefix rules and lifecycle
+  are a bit of a mixed bag.
+
+  Alternatively, a related form could do away with any non-numeric character in
+  the stat field set and restrict it to spaces and a few numerical helper characters.
+  The parser can now scan a compact (but still ASCII) head, and use simple rules
+  to get the stat and remaining textual record.
+  Still for non numeric Ids and keys, external caching or further parsing is required.
+
+  The oneline can be further split immediately as well, into a restricted
+  left hand side and permissive right hand side.
+  This yields the logical record Id, or user alias for it by taking in either the
+  strict word or some pattern ending in ':' followed by a blank, EOL, or continuation.
+
+  Furthermore embedding or (ASCII/unicode) harnassing can be more formally defined perhaps.
+
+  Add document level metadata, in markdown-esque '---' surrounded YAML blocks.
+
